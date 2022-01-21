@@ -1,5 +1,5 @@
 /*****JavaScript para o funcionamento do chronoômetro*****/
-var gametime = 3;
+var gametime = 3; //tempo de jogo sera definido pelo usuario
 
 var mm = 0, ss = 0, acrescimo=0, acrescimoTotal=0, chrono, tempo = 50;//tempo = quantos milésimos valem 1 segundo?
 
@@ -74,27 +74,24 @@ function confirm(){ //Adiciona gols para o time 2
 
     var x = document.getElementById("nameTeam1");
 
-    x.style.display = "none";
-
-
-    var h1 = document.getElementById('nome1');
-    h1.innerHTML = name;
-
-//
-
     var name2 = document.getElementById("nameTeam2").value;
-
 
     var z = document.getElementById("nameTeam2");
 
-    z.style.display = "none";
+    if (name=="" || name2=="") {
+        alert('Insira o nome do time!')
+    }else {
+        x.style.display = "none";
+        var h1 = document.getElementById('nome1');
+        h1.innerHTML = name;
 
+        z.style.display = "none";
+        var h2 = document.getElementById('nome2');
+        h2.innerHTML = name2;
 
-    var h2 = document.getElementById('nome2');
-    h2.innerHTML = name2;
+        document.getElementById('confirmButton').style.display = 'none';
+    }
 
-
-    document.getElementById('confirmButton').style.display = 'none';
 }
 
 
