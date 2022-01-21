@@ -72,9 +72,6 @@ function addGoalTeam2(){ //Adiciona gols para o time 2
 function confirm(){ //Adiciona gols para o time 2
     var name = document.getElementById("nameTeam1").value;
 
-
-
-
     var x = document.getElementById("nameTeam1");
 
     x.style.display = "none";

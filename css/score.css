@@ -1,0 +1,47 @@
+body {
+    background: #87CEFA;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.game {
+    background: chartreuse;
+    text-align: center;
+}
+
+.goal-button {
+    background: #1586f7;
+    border-radius: 15px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 60px;
+    padding: 40px 25px 40px 25px;
+    display: inline-block;
+    margin: 50px;
+}
+
+#X {
+    font-size: 80px;
+    display: inline;
+}
+
+.team1, .team2, .nome {
+    background: red;
+    display: inline-block;
+}
+
+#stopwatch {
+    background: white;
+    text-align: center;
+    font-size: 85px;
+}
+
+.control-buttons {
+    background: red;
+    text-align: center;
+    margin: 20px;
+}
+
+.control-button {
+    margin: 20px;
+}
