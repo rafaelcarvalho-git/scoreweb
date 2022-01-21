@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <script src="javascript/start.js"></script>
+</head>
+<body>
+    <form action="">
+        <h1>Nome Time 1:</h1>
+        <input type="text" id="nomeTime1" name="name1">
+
+        <h1>Nome Time 2:</h1>
+        <input type="text" id="lname" name="lname"><br>
+
+        <input type="checkbox" id="players-name" name="playersName">
+        <label for="players-name">Predefinir nome dos jogadores</label><br>
+
+        <input type="checkbox" id="second-time" name="secondTime" onclick="secondtime();">
+        <label for="second-time">2° Tempo</label><br>
+
+        <label for="quantity">Tempo de Jogo:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+        <input type="submit" value="Iniciar" onclick="startgame();">
+    </form>
+
+    
+</body>
+</html>

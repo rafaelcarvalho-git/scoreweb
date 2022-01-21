@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/score.js"></script>
+    <!--<script src="javascript/goal.js"></script>-->
+</head>
+<body id="score-in-game">
+    
+    <div class="gametime">
+        <h1 id="stopwatch">00:00</h1>
+    </div>
+
+        <h1 id="X">X</h1>
+
+    <div class="teamLabels">
+        <div class="labelTeam1">
+            <h1 id="nome1"></h1>
+            <input type="text" id="nameTeam1" placeholder="Nome do time">
+        </div>
+        <div class="labelTeam2">
+            <h1 id="nome2"></h1>
+            <input type="text" id="nameTeam2" placeholder="Nome do time">
+        </div>
+    </div>
+
+    <div class="goalButtons">
+        <div class="scoreTeam1">
+            <input type="button" id="btGoalTeam1" onclick="addGoalTeam1();" value="0"/>
+        </div>
+        <div class="scoreTeam2">
+            <input type="button" id="btGoalTeam2" onclick="addGoalTeam2();" value="0"/>
+        </div>
+    </div>
+
+    <div class="controlButtons">
+        <div class="confirmGame">
+            <button onclick="confirm();" id="confirmButton">Confirmar</button>
+        </div>
+        
+        <div class="startGame">
+            <button onclick="start();" id="startButton">Start Game</button>
+        </div>
+        <div class="addTime">
+            <button onclick="addTime();" id="timeButton">Add Time</button>
+        </div>
+        <div class="endGame">
+            <a href="matchdata.html">
+                <button onclick="stop();" id="endButton">End Game</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
