@@ -9,22 +9,41 @@
 </head>
 <body>
     <h1 id="stopwatch">00:00</h1>
+
+<div class="setup-game">
+    <div class="preset-players">
+        <input type="checkbox" id="players-name" name="playersName">
+        <label id="label-predef-players" for="players-name">Predefinir nome dos jogadores</label>
+    </div>
+    <div class="second-time">
+        <input type="checkbox" id="second-time" name="secondTime" onclick="secondtime();">
+        <label for="second-time">2° Tempo</label><br>
+    </div>
+    <div class="gametime">
+        <label for="quantity">Tempo de Jogo:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+    </div>
+</div>
     
 <div class="game">
     <div class="team1">
         <h1 class="nome" id="nome1"></h1>
-        <input type="text" id="nameTeam1" placeholder="Nome do time1">
+        <div class="input">
+            <input class="input-name" type="text" id="nameTeam1" placeholder="Nome do time1">
+        </div>
+        
         <input class="goal-button" type="button" id="btGoalTeam1" onclick="addGoalTeam1();" value="0"/>
     </div>
     <h1 id="X">X</h1>
     <div class="team2">
         <input class="goal-button" type="button" id="btGoalTeam2" onclick="addGoalTeam2();" value="0"/>
-        <input type="text" id="nameTeam2" placeholder="Nome do time2">
+        <div class="input">
+            <input class="input-name" type="text" id="nameTeam2" placeholder="Nome do time2">
+        </div>
+
         <h1 class="nome"  id="nome2"></h1>
     </div>
 </div>
-
-
 
 <div class="control-buttons">
     <div class="control-button">
