@@ -8,16 +8,30 @@ body {
     background: #87CEFA;
 }
 
+main {
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1280px;
+    margin: auto;
+    background: wheat;
+}
 
-.game {
-    background: rgb(178, 238, 119);
+#stopwatch {
+    background: white;
+    text-align: center;
+    font-size: 110px;
+    margin: 0 auto 0 auto;
+    width: 500px;
+}
+
+.configuracoes {
+    background: red;
+    margin: auto;
+    width: 500px;
     text-align: center;
 }
 
-.setup-game {
-    text-align: center;
-}
-
+/*
 .preset-players, .second-time {
     display: inline;
     margin: 0 20px 0 20px;
@@ -35,7 +49,8 @@ body {
 
 .goal-button {
     background: #1586f7;
-    border-radius: 20px;
+    border: none;
+    border-radius: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
     font-size: 100px;
@@ -52,42 +67,99 @@ body {
 .input-name {
     text-align: center;
     
- 
+}*/
+
+
+.game {
+    background: rgb(178, 238, 119);
+    text-align: center;
+    height: 360px;
+    display: flex;
 }
-
-
-#X {
-    font-size: 12vh;
-    display: inline;
-}
-
 .team1 {
     background: rgb(233, 101, 101);
-    display: inline;
-    
-    
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.goal-button {
+    background: #1586f7;
+    border: none;
+    border-radius: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    font-size: 100px;
+    padding: 40px 40px 40px 40px;
+    margin: auto;
+}
+
+.inserir-nome {
+    background: rgb(204, 156, 164);
+    height: 40%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.input-name {
+    border: none;
+    width: 90%;
+    height: 65px;
+    margin: auto;
+    font-size: 60px;
+}
+
+.nometime {
+    background: rgb(204, 156, 164);
+    height: 40%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.nometime h1 {
+    font-size: 60px;
+    margin: auto;
+}
+.btgol {
+    background: rgb(201, 42, 68);
+    height: 75%;
+    width: 25%;
+    display: flex;
+    align-items: center;
 }
 
 .team2 {
-    background: rgb(233, 101, 101);
-    display: inline;
-   
-  
+    background: rgb(9, 30, 151);
+    width: 45%;
+}
+.x {
+    background: pink;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.x h1 {
+    font-size: 100px;
+    margin: auto;
 }
 
-#stopwatch {
-    background: white;
-    text-align: center;
-    font-size: 110px;
-    margin: 50px;
-}
 
-.control-buttons {
+.controles {
     background: rgb(236, 182, 182);
     text-align: center;
-    margin: 20px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.control-button {
-    margin: 20px;
+.controles button {
+    border: none;
+    width: 240px;
+    height: 50px;
+    margin: 5px auto 5px auto;
+}
+.controles button:hover {
+    background: gray;
 }

@@ -8,61 +8,72 @@
     <link rel="stylesheet" href="css/score.css">
 </head>
 <body>
-    <h1 id="stopwatch">00:00</h1>
-
-<div class="setup-game">
-    <div class="preset-players">
-        <input type="checkbox" id="players-name" name="playersName">
-        <label id="label-predef-players" for="players-name">Predefinir nome dos jogadores</label>
-    </div>
-    <div class="second-time">
-        <input type="checkbox" id="second-time" name="secondTime" onclick="secondtime();">
-        <label for="second-time">2° Tempo</label><br>
-    </div>
-    <div class="gametime">
-        <label for="quantity">Tempo de Jogo:</label><br>
-        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
-    </div>
-</div>
-    
-<div class="game">
-    <div class="team1">
-        <h1 class="nome" id="nome1"></h1>
-        <div class="input">
-            <input class="input-name" type="text" id="nameTeam1" placeholder="Nome do time1">
+    <main>
+        <div class="cronometro">
+            <h1 id="stopwatch">00:00</h1>
         </div>
+   
         
-        <input class="goal-button" type="button" id="btGoalTeam1" onclick="addGoalTeam1();" value="0"/>
-    </div>
-    <h1 id="X">X</h1>
-    <div class="team2">
-        <input class="goal-button" type="button" id="btGoalTeam2" onclick="addGoalTeam2();" value="0"/>
-        <div class="input">
-            <input class="input-name" type="text" id="nameTeam2" placeholder="Nome do time2">
+
+        <div class="configuracoes">
+            <div class="preset-players">
+                <input type="checkbox" id="players-name" name="playersName">
+                <label id="label-predef-players" for="players-name">Predefinir nome dos jogadores</label>
+            </div>
+            <div class="second-time">
+                <input type="checkbox" id="second-time" name="secondTime" onclick="secondtime();">
+                <label for="second-time">2° Tempo</label><br>
+            </div>
+            <div class="gametime">
+                <label for="quantity">Tempo de Jogo:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+            </div>
         </div>
 
-        <h1 class="nome"  id="nome2"></h1>
-    </div>
-</div>
+        <div class="game">
+        <div class="team1">
+            <div class="inserir-nome">
+                <input class="input-name" type="text" id="nameTeam1" placeholder="Nome do time1">
+            </div>
+            <div class="nometime">
+                <h1>Falcons F.c</h1>
+            </div>
+            <div class="btgol">
+                <input class="goal-button" type="button" id="btGoalTeam1" onclick="addGoalTeam1();" value="0"/>
+            </div>
+            
+            <!--
+            <h1 class="nome" id="nome1"></h1>
+            
+            
+            -->
+        </div>
+        <div class="x">
+            <h1>X</h1>
+        </div>
+       
+        <div class="team2">b<!--
+            <input class="goal-button" type="button" id="btGoalTeam2" onclick="addGoalTeam2();" value="0"/>
+            <div class="input">
+                <input class="input-name" type="text" id="nameTeam2" placeholder="Nome do time2">
+            </div>
 
-<div class="control-buttons">
-    <div class="control-button">
-        <button onclick="confirm();" id="confirmButton">Confirmar</button>
-    </div>
-    
-    <div class="control-button">
-        <button onclick="start();" id="startButton">Start Game</button>
-    </div>
-    <div class="control-button">
-        <button onclick="addTime();" id="timeButton">Add Time</button>
-    </div>
-    <div class="control-button">
-        <a href="matchdata.html">
+            <h1 class="nome"  id="nome2"></h1>-->
+        </div>
+        </div>
+
+        <div class="controles">
+     
+            <button onclick="confirm();" id="confirmButton">Confirmar</button>
+         
+            <button onclick="start();" id="startButton">Start Game</button>      
+     
+            <button onclick="addTime();" id="timeButton">Add Time</button>    
+      
             <button onclick="stop();" id="endButton">End Game</button>
-        </a>
-    </div>
-</div>
-
+         
+        </div>
+</main>
 <script src="js/score.js"></script>
 </body>
 </html>
